@@ -1,0 +1,33 @@
+{
+    "name": "hyqo/string",
+    "description": "Fluent-style string operations",
+    "keywords": [
+        "string",
+        "camel case",
+        "snake case"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oleg Sedinkin",
+            "email": "a@aw.wtf"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hyqo\\String\\": "src"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.x-dev"
+        }
+    }
+}
