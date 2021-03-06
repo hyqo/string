@@ -2,6 +2,9 @@
 
 namespace Hyqo\String;
 
+use JetBrains\PhpStorm\Pure;
+
+#[Pure]
 function s(string $string): PrettyString
 {
     return new PrettyString($string);

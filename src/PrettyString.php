@@ -4,11 +4,9 @@ namespace Hyqo\String;
 
 class PrettyString
 {
-    private string $text;
-
-    public function __construct(string $text)
-    {
-        $this->text = $text;
+    public function __construct(
+        private string $text
+    ) {
     }
 
     public function __toString(): string

@@ -1,4 +1,7 @@
-# String [![Packagist Version](https://img.shields.io/packagist/v/hyqo/string)](https://packagist.org/packages/hyqo/string)
+# String 
+
+[![Packagist Version](https://img.shields.io/packagist/v/hyqo/string)](https://packagist.org/packages/hyqo/string)
+![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/hyqo/string)
 
 Fluent-style string operations
 
