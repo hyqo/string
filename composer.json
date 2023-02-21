@@ -4,7 +4,8 @@
     "keywords": [
         "string",
         "camel case",
-        "snake case"
+        "snake case",
+        "pascal case"
     ],
     "license": "MIT",
     "authors": [
