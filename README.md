@@ -23,13 +23,10 @@ echo s('FOO BAR')->lower()->upperFirst(); //Foo bar
 Other functions:
 ```php
 use function Hyqo\String\s;
+use Hyqo\String\SplitFlag;
 
 s('foo#bar')->leftCrop('#'); //bar
 s('foo#bar')->rightCrop('#'); //foo
-
-s('foo="bar"')->parseKeyValue(); // ['foo', 'bar']
-
-use function Hyqo\String\SplitFlag;
 
 s('foo, , bar')->split(','); // ['foo', ' ', ' bar']
 s('foo, , bar')->split(',', SplitFlag::TRIM_NO_EMPTY); // ['foo', 'bar']
