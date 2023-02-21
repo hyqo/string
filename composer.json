@@ -1,7 +1,10 @@
 {
-    "name": "hyqo/",
-    "description": "",
+    "name": "hyqo/string",
+    "description": "Fluent-style string operations",
     "keywords": [
+        "string",
+        "camel case",
+        "snake case"
     ],
     "license": "MIT",
     "authors": [
@@ -18,12 +21,10 @@
     },
     "autoload": {
         "psr-4": {
-            "Hyqo\\\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Hyqo\\\\Test\\": "tests"
-        }
+            "Hyqo\\String\\": "src"
+        },
+        "files": [
+            "src/functions.php"
+        ]
     }
 }
