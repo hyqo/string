@@ -97,20 +97,14 @@ class PrettyString
         $parts = explode($delimiter, $this->text);
 
         if (SplitFlag::TRIM & $flags) {
-            array_walk($parts, static function (string &$part) {
-                $part = trim($part);
-            });
+            $parts = array_map(static fn(string $part) => trim($part), $parts);
         }
 
         if (SplitFlag::NO_EMPTY & $flags) {
-            return array_values(
-                array_filter($parts, static function (string $part) {
-                    return (bool)$part;
-                })
-            );
+            $parts = array_filter($parts, static fn(string $part) => (bool)$part);
         }
 
-        return $parts;
+        return array_values($parts);
     }
 
     public function splitStrictly(string $delimiter): array

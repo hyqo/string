@@ -75,9 +75,14 @@ class PrettyStringTest extends TestCase
 
     public function test_split(): void
     {
-        $this->assertEquals([], s('')->split(' ', SplitFlag::NO_EMPTY));
+        $this->assertEquals([''], s('')->split(' '));
+        $this->assertEquals([], s('')->splitStrictly(' '));
+
+        $this->assertEquals(['foo', ' ', ' bar'], s('foo, , bar')->split(','));
         $this->assertEquals(['foo', 'bar'], s('foo bar')->split(' '));
-        $this->assertEquals(['foo', 'bar'], s('foo,bar')->split(',', SplitFlag::NO_EMPTY));
+
+        $this->assertEquals(['foo', 'bar'], s('foo,,bar')->split(',', SplitFlag::NO_EMPTY));
+        $this->assertEquals(['foo', 'bar'], s('foo, bar')->split(',', SplitFlag::TRIM));
         $this->assertEquals(['foo', 'bar'], s('foo, , bar')->split(',', SplitFlag::NO_EMPTY | SplitFlag::TRIM));
         $this->assertEquals(['foo', 'bar'], s('foo, , bar')->splitStrictly(','));
     }

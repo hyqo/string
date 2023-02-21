@@ -29,6 +29,6 @@ s('foo#bar')->leftCrop('#'); //bar
 s('foo#bar')->rightCrop('#'); //foo
 
 s('foo, , bar')->split(','); // ['foo', ' ', ' bar']
-s('foo, , bar')->split(',', SplitFlag::TRIM_NO_EMPTY); // ['foo', 'bar']
+s('foo, , bar')->split(',', SplitFlag::TRIM | SplitFlag::NO_EMPTY); // ['foo', 'bar']
 s('foo, , bar')->splitStrictly(','); // ['foo', 'bar']
 ```
