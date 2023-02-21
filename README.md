@@ -1,6 +1,6 @@
 # String
 
-![Packagist Version](https://img.shields.io/packagist/v/hyqo/string.svg?style=flat-square)
+![Packagist Version](https://img.shields.io/packagist/v/hyqo/string?style=flat-square)
 ![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/hyqo/string?style=flat-square)
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/hyqo/string/tests.yml?label=tests&style=flat-square)
 
