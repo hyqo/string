@@ -2,7 +2,7 @@
 
 ![Packagist Version](https://img.shields.io/packagist/v/hyqo/string.svg?style=flat-square)
 ![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/hyqo/string?style=flat-square)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/hyqo/string/run-tests?style=flat-square&label=tests)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/hyqo/string/tests.yml?label=tests&style=flat-square)
 
 Fluent-style string operations
 
@@ -18,14 +18,6 @@ composer require hyqo/string
 use function Hyqo\String\s;
 
 echo s('FOO BAR')->lower()->upperFirst(); //Foo bar
-```
-
-Changing writing style also available as functions:
-
-```php
-echo CamelCase('foo_bar'); //fooBar
-echo snake_case('fooBar'); //foo_bar
-echo PascalCase('foo_bar'); //FooBar
 ```
 
 Other functions:
